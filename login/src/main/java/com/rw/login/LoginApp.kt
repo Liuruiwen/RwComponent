@@ -10,11 +10,6 @@ import com.rw.component_factory.ServiceFactory
  * Desc:
  */
 class LoginApp :BaseApp(){
-    override fun onCreate() {
-        super.onCreate()
-        initModuleApp(this)
-        initModuleData(this)
-    }
     override fun initModuleApp(application: Application?) {
         ServiceFactory.get().setAccountService(AccountService())
     }
